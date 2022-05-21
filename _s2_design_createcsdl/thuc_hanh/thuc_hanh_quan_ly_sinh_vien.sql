@@ -1,37 +1,37 @@
 CREATE DATABASE quan_ly_sinh_vien;
 USE quan_ly_sinh_vien;
-CREATE TABLE Class
+CREATE TABLE class
 (
-    ClassID   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    ClassName VARCHAR(60) NOT NULL,
-    StartDate DATETIME    NOT NULL,
-    Status    BIT
+    classID   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    className VARCHAR(60) NOT NULL,
+    startDate DATETIME    NOT NULL,
+    `status`    BIT
 );
-CREATE TABLE Student
+CREATE TABLE student
 (
-    StudentId   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    StudentName VARCHAR(30) NOT NULL,
-    Address     VARCHAR(50),
-    Phone       VARCHAR(20),
-    Status      BIT,
-    ClassId     INT         NOT NULL,
-    FOREIGN KEY (ClassId) REFERENCES Class (ClassID)
+    studentid   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    studentName VARCHAR(30) NOT NULL,
+    address     VARCHAR(50),
+    phone       VARCHAR(20),
+    `status`      BIT,
+    classId     INT         NOT NULL,
+    FOREIGN KEY (classid) REFERENCES class (classiD)
 );
-CREATE TABLE Subject
+CREATE TABLE `Subject`
 (
-    SubId   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    SubName VARCHAR(30) NOT NULL,
-    Credit  TINYINT     NOT NULL DEFAULT 1 CHECK ( Credit >= 1 ),
-    Status  BIT                  DEFAULT 1
+    subid   INT         NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    subname VARCHAR(30) NOT NULL,
+    credit  TINYINT     NOT NULL DEFAULT 1 CHECK ( credit >= 1 ),
+    `status`  BIT       DEFAULT 1
 );
-CREATE TABLE Mark
+CREATE TABLE mark
 (
-    MarkId    INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    SubId     INT NOT NULL,
-    StudentId INT NOT NULL,
-    Mark      FLOAT   DEFAULT 0 CHECK ( Mark BETWEEN 0 AND 100),
-    ExamTimes TINYINT DEFAULT 1,
-    UNIQUE (SubId, StudentId),
-    FOREIGN KEY (SubId) REFERENCES Subject (SubId),
-    FOREIGN KEY (StudentId) REFERENCES Student (StudentId)
+    markid    INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    subid     INT NOT NULL,
+    studentid INT NOT NULL,
+    mark      FLOAT   DEFAULT 0 CHECK ( mark BETWEEN 0 AND 100),
+    examtimes TINYINT DEFAULT 1,
+    UNIQUE (subid, studentid),
+    FOREIGN KEY (subid) REFERENCES Subject (subid),
+    FOREIGN KEY (studentid) REFERENCES student (studentid)
 );
