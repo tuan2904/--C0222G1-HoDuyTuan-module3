@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+#header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+#nav {
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+#sec{
+    background-color: blue;
+    height: 250px;
+    width: 80%;
+    float: left;
+}
+#article {
+    background-color: red;
+    height: 250px;
+    width: 80%;
+    float: left;
+}
+#aside{
+    background-color: cornflowerblue;
+    height: 500px;
+    width: 20%;
+    float: right;
+}
+#footer {
+    height: 60px;
+    width: 100%;
+}
