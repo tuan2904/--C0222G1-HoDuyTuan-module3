@@ -5,6 +5,7 @@ body{
 background-color: black ;
     height: 50px;
     width: 100%;
+    text-align: center;
 }
 #between{
 
@@ -12,13 +13,13 @@ background-color: black ;
     width: 60%;
     float: left; }
 #left{
-
+background-color: snow;
     height: 600px;
     width: 20%;
     float: left;
 }
 #duoi{
-    background-color:slategray ;
+    background-color:lightgray ;
     width: 100%;
     height: 50px;
     clear: both;
@@ -26,10 +27,11 @@ background-color: black ;
 
 }
 #right {
-
+    background-color: snow;
     height: 600px;
     width: 20%;
     float: right;
+
 }
 #lego{
     float: left;
@@ -97,7 +99,40 @@ padding: 20px 30px;
     border-bottom: black;
     display: none;
 }
-
+#asd{
+   margin-top: 40px;
+    text-align: center;
+}
+#a{
+    width: 150px;
+    height: 100px;
+    /*text-align: center;*/
+    top: 20px;
+    border-style: solid;
+margin: auto;
+    background-color: lightgray;
+    margin-top: 20px;
+}
+#b{
+    width: 150px;
+    height: 100px;
+    /*text-align: center;*/
+    top: 20px;
+    border-style: solid;
+    margin: auto;
+    background-color: lightgray;
+    margin-top: 20px;
+}
+#asdc{
+    margin-top: 40px;
+    text-align: center;
+}
+#nd{
+    margin-left: 5px;
+}
+#f{
+   margin-top: 100px;
+}
 /*#nut{*/
 /*    float: right;*/
 /*    background-color: white;*/
