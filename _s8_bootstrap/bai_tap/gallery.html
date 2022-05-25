@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .container:hover {
+            color: #1c7430;
+            text-decoration: underline;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Responsive Image Gallery</h1>
+    <p>Resize the browser window to see the effect.</p>
+</div>
+<div class="row" style="text-align: center">
+    <div class="col-md-3 container">
+        <div class=" card" style="width: 20rem;">
+            <a href=""><img class="card-img-top" src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg"
+                            alt="Card image cap"></a>
+            <div class="card-body">
+                <p class="card-text">Mô tả ảnh</p>
+            </div>
+            <!--</div>-->
+            <!--    <div class="card" style="width: 15rem;">-->
+            <!--    <a href=""><img class="card-img-top" src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="Card image cap"></a>-->
+            <!--    <div class="card-body">-->
+            <!--        <h5 class="card-title">Card title</h5>-->
+            <!--        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+            <!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            <!--    </div>-->
+        </div>
+    </div>
+    <div class="col-md-3 container">
+        <div class="card" style="width: 20rem;">
+            <a href=""><img class="card-img-top" src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg"
+                            alt="Card image cap"></a>
+            <div class="card-body">
+                <p class="card-text">Mô tả ảnh</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 container">
+        <div>
+            <div class=" card" style="width: 20rem;">
+                <a href=""><img class="card-img-top" src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg"
+                                alt="Card image cap"></a>
+                <div class="card-body">
+                    <p class="card-text">Mô tả ảnh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 container">
+        <div class="card" style="width: 20rem;">
+            <a href=""><img class="card-img-top" src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg"
+                            alt="Card image cap"></a>
+            <div class="card-body">
+                <p class="card-text">Mô tả ảnh</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div><p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px
+    wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side.
+    For screens smaller than 500px, the images will stack vertically (100%). </p></div>
+</body>
+<script src="../../bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</html>
